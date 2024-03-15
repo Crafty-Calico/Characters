@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/a34cfd4b8b.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function show(name) {
+			document.getElementById("profile").classList.add("hidden");
+			document.getElementById("personality").classList.add("hidden");
+			document.getElementById("physicality").classList.add("hidden");
+			document.getElementById("backstory").classList.add("hidden");
+			document.getElementById("relationships").classList.add("hidden");
+			document.getElementById("miscellaneous").classList.add("hidden");
+			document.getElementById(name).classList.remove("hidden");
+		}
+	</script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header"></div>
+		<img width="250" height="450" src="images/limepawbust.png" style="grid-area: image" />
+		<div style="vertical-align: top; grid-area: panels;">
+			<div style="display: flex; gap: 10px;">
+				<button onclick='show("profile")' style="flex: 1; color: #88985b;"><i class="fa fa-cat fa-3x"></i></button>
+				<button onclick='show("personality")' style="flex: 1; color: #88985b;"><i class="fa fa-star fa-3x"></i></button>
+				<button onclick='show("physicality")' style="flex: 1; color: #88985b;"><i class="fa fa-pen fa-3x"></i></button>
+				<button onclick='show("backstory")' style="flex: 1; color: #88985b;"><i class="fa fa-book fa-3x"></i></button>
+				<button onclick='show("relationships")' style="flex: 1; color: #88985b;"><i class="fa fa-heart fa-3x"></i></button>
+				<button onclick='show("miscellaneous")' style="flex: 1; color: #88985b;"><i class="fa fa-question fa-3x"></i></button>
+			</div>
+			<div>
+				<div style="z-index: 1;" id="profile" class="panel">
+
+					    <h1>"Don't you wanna be a [[BIG SHOT]]?"</h1>
+
+				 <hr width="85%" align="center">
+					<div style="width: 100%; padding-bottom: 20px; display: grid; grid: repeat(5, 1fr) / 1fr 1fr;">
+						<span><b>NAME</b></span>
+						<span style="text-align: end;">Little Meow Meow</span>
+						<span><b>NICKNAMES</b></span>
+						<span style="text-align: end;">Yes</span>
+						<span><b>AGE</b></span>
+						<span style="text-align: end;">sqrt(-1)</span>
+						<span><b>GENDER</b></span>
+						<span style="text-align: end;">Funny</span>
+						<span><b>ORIENTATION</b></span>
+						<span style="text-align: end;">Upside down</span>
+						<span><b>SPECIES</b></span>
+						<span style="text-align: end;">Creature<sup>[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Citations_needed">citation needed</a></i>]</sup></span>
+					</div>
+					<div style="text-align:center">
+						<img width="400" src="images/limepawbust.png" />
+					</div>
+				</div>
+	
+				
+				<div style="z-index: 2;" id="personality" class="panel hidden">
+					<h1>Personality</h1>
+					<hr width="85%" align="center">
+					<div style="display: flex; gap: 10px; padding-bottom: 10px;">
+						<div style="flex: 1; border: 1px solid; padding: 5px;">
+							<p style="text-align: center;"><i class="fas fa-pencil-ruler"></i><b> MEASUREMENTS</b></p>
+							<div style="width: 100%; display: grid; grid: repeat(5, 1fr) / 1fr 1fr;">
+								<span><b>Height</b></span>
+								<span style="text-align: end;">0'</span>
+								<span><b>Build</b></span>
+								<span style="text-align: end;">Universal</span>
+								<span><b>Species</b></span>
+								<span style="text-align: end;">Creature</span>
+								<span><b>Trait</b></span>
+								<span style="text-align: end;">Inedible</span>
+								<span><b>Theme</b></span>
+								<span style="text-align: end;">Cursed</span>
+							</div>
+						</div>
+						<div style="flex: 1; border: 1px solid; padding: 5px;">
+							<p style="text-align: center;"><i class="fas fa-comment"></i><b> MENTAL ATTRIBUTES</b></p>
+							<div style="width: 100%; display: grid; grid: repeat(5, 1fr) / 1fr 1fr;">
+								<span><b>Horoscope</b></span>
+								<span style="text-align: end;">The Cool One</span>
+								<span><b>MBTI</b></span>
+								<span style="text-align: end;">sfmjrfojsdv</span>
+								<span><b>Enneagram</b></span>
+								<span style="text-align: end;">1wyourmom</span>
+								<span><b>Temperament</b></span>
+								<span style="text-align: end;">Questionable</span>
+								<span><b>Alignment</b></span>
+								<span style="text-align: end;">FIRST_LINE_START</span>
+							</div>
+						</div>
+					</div>
+					<div style="display: flex; gap: 10px;">
+						<div style="flex: 1; border: 1px solid;">
+							<p style="text-align: center;"><i class="fas fa-plus-circle"></i><b> POSITIVE</b></p>
+							<hr>
+							<p style="text-align: center;">
+								A<br>B<br>C
+							</p>
+						</div>
+						<div style="flex: 1; border: 1px solid;">
+							<p style="text-align: center;"><i class="fas fa-pause-circle"></i><b> NEUTRAL</b></p>
+							<hr>
+							<p style="text-align: center;">
+								A<br>B<br>C
+							</p>
+						</div>
+						<div style="flex: 1; border: 1px solid;">
+							<p style="text-align: center;"><i class="fas fa-minus-circle"></i><b> NEGATIVE</b></p>
+							<hr>
+							<p style="text-align: center;">
+								A<br>B<br>C
+							</p>
+						</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est placerat in egestas erat imperdiet sed euismod. Vulputate odio ut enim blandit volutpat maecenas. Congue nisi vitae suscipit tellus mauris a diam.</p>
+
+                    <div style="display: grid; grid: 1fr 1fr 1fr / 1fr 3fr 1fr 3fr; gap: 10px;">
+						<label for="offence">Offence</label>
+						<progress id="offence" max="100" value="50">50%</progress>               
+						<label for="file">Defence</label>
+						<progress id="file" max="100" value="50">50%</progress>
+						<label for="file">Hunting</label>
+						<progress id="file" max="100" value="50">50%</progress>
+						<label for="file">Swimming</label>
+						<progress id="file" max="100" value="50">50%</progress>
+						<label for="file">Leading</label>
+						<progress id="file" max="100" value="50">50%</progress>              
+						<label for="file">Medicine</label>
+						<progress id="file" max="100" value="50">50%</progress>               
+					</div>
+				</div>
+				
+					
+				<div style="z-index: 4;" id="physicality" class="panel hidden">
+					<h1>Physicality</h1>
+					<hr width="85%" align="center">
+					
+					<div style="text-align:center">
+						<img width="400" src="images/Streamskyref.png" />
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est placerat in egestas erat imperdiet sed euismod. Vulputate odio ut enim blandit volutpat maecenas. Congue nisi vitae suscipit tellus mauris a diam.</p>
+					<h2>Notes</h2>
+					<hr>
+					<ul>
+						<li>A</li>
+						<li>B</li>
+						<li>C</li>
+					</ul>
+					<h2>Scars / Disablities</h2>
+					<hr>
+					<ul>
+						<li>A</li>
+						<li>B</li>
+						<li>C</li>
+					</ul>
+					
+					</div>
+				
+				<div style="z-index: 3;" id="backstory" class="panel hidden">
+					<h1>Backstory</h1>
+					<hr width="85%" align="center">
+					Lorem ipsum dolor and cheddar, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est placerat in egestas erat imperdiet sed euismod. Vulputate odio ut enim blandit volutpat maecenas. Congue nisi vitae suscipit tellus mauris a diam.
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est placerat in egestas erat imperdiet sed euismod.</p>
+				</div>
+				<div style="z-index: 4;" id="relationships" class="panel hidden">
+					<h1>Relationships</h1>
+					<hr width="85%" align="center">
+				
+					You want it! You want it! only 12345.99 at your local EASpiorts
+				</div>
+				<div style="z-index: 4;" id="miscellaneous" class="panel hidden">
+					<h1>Miscellaneous</h1>
+					<hr width="85%" align="center">
+				
+						<h2>Trivia</h2>
+					<hr>
+					<ul>
+						<li>this sure</li>
+						<li>is a</li>
+						<li>template</li>
+					</ul>
+					    <h2>Playlist</h2>
+					<hr>
+					This sure is a template
+					    <h2>Ribbons</h2>
+					<hr>
+					This
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+	</div>
+</body>
+</html>
